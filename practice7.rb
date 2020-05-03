@@ -1,5 +1,5 @@
-puts <<milkman
+puts <<kyouhei
  hello!
- i am milkman!!
+ i am kyouhei!!
  i like milk.
  milkman
