@@ -1,13 +1,25 @@
 
 var user_hand = prompt("じゃんけんをしましょう。グーチョキパーのどれかをだしてください")
 
+while ((user_hand != "グー")&&(user_hand!="チョキ")&&(user_hand!="パー")&&(user_hand!=null)){
+	alert("グーチョキパーのいずれかを出してください");
+	user_hand = prompt("じゃんけんの手をグーチョキパーから選んでください");
+}
+
+
+
 var js_hand = getJShand();
 
 var judge = winLose(user_hand, js_hand);
 
+if(user_hand!=null){
+
+
 alert("あなたの選んだ手は" + user_hand + "です。私の選んだ手は" + js_hand + "です。結果は" + judge + "です");
 
-
+}else{
+	alert("またチャレンジしてね")
+}
 
 function getJShand(){
 
